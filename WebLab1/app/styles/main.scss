@@ -1,12 +1,14 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "materialize/sass/materialize.scss";
 // endbower
 
 //imports
 @import 'animate';
 
-$bgColor: #e5e5e5;
+$bgColor: #efebe9;
+$textColor: #424242;
 
 .browsehappy {
   margin: 0.2em 0;
@@ -17,6 +19,8 @@ $bgColor: #e5e5e5;
 
 body {
   padding: 0;
+  color: $textColor;
+  background-color: $bgColor;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -90,6 +94,10 @@ ol {
     li {
         text-align: left;
     }
+}
+
+a {
+    color: #29b6f6;
 }
 
 /* Responsive: Portrait tablets and up */
