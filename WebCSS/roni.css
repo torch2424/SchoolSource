@@ -4,10 +4,7 @@
 /* CSS goes here! */
 
 body {
-    opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+    background-color: #a4b4b4;
 }
 
 header {
@@ -23,6 +20,24 @@ nav {
 nav a {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+/*Fancy CSS3 Hovering*/
+a {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+section {
+    background-color: #c5d5de;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 aside {
