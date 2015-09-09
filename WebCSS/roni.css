@@ -5,6 +5,7 @@
 
 body {
     background-color: #a4b4b4;
+    color: #000035;
 }
 
 header {
@@ -12,9 +13,39 @@ header {
     text-align: center;
 }
 
+#lblogo {
+    vertical-align: -webkit-baseline-middle;
+    padding-bottom: 17px;
+}
+
+#lblogo:hover {
+    -ms-transform: translate(0px, -10px); /* IE 9 */
+      -webkit-transform: translate(0px, -10px); /* Safari */
+   transform: translate(0px, -10px);
+}
+
+#CECS {
+    display: inline;
+}
+
 nav {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     text-align: center;
+
+    border-radius: 3px;
+    width: 400px;
+
+    background-color: rgba(0, 0, 0, 0);
+    transition: all.25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+
+
+nav:hover {
+    background-color: rgba(0, 0, 0, .25);
 }
 
 nav a {
@@ -34,14 +65,21 @@ a:hover {
     opacity: 0.5;
 }
 
-section {
-    background-color: #c5d5de;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 aside {
     margin-top: 5px;
+}
+
+section {
+    background-color: #c5d5de;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    margin: auto;
+    width: 90%;
+
+    box-shadow: 10px 10px 5px #4A4A62;
 }
 
 h3 {
@@ -50,5 +88,6 @@ h3 {
 }
 
 footer {
+    margin-top: 10px;
     font-weight: bold;
 }
