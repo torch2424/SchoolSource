@@ -2,3 +2,38 @@
 /* CSS Document */
 
 /* CSS goes here! */
+
+body {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+nav {
+    margin: auto;
+    text-align: center;
+}
+
+nav a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+aside {
+    margin-top: 5px;
+}
+
+h3 {
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    font-weight: bold;
+}
