@@ -1,0 +1,15 @@
+//Colors, Defining my color scheme here
+$bgColor: #313131;
+$standardText: #dee6ee;
+
+
+
+body {
+  padding: 0;
+  background-color: $bgColor;
+  color: $standardText;
+}
+
+.jumbotron {
+    color: $bgColor;
+}

@@ -12,6 +12,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  background-color: #313131;
+  color: #dee6ee;
+}
+
+.jumbotron {
+    color: #313131;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -89,3 +95,6 @@ body {
     border-bottom: 0;
   }
 }
+
+//Import my styles at the end
+@import "mystyle";
