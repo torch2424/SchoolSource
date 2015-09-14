@@ -1,6 +1,8 @@
 //Colors, Defining my color scheme here
 $bgColor: #313131;
+$navBg: #524a4a;
 $standardText: #dee6ee;
+$navbarActive: #838383;
 
 
 
@@ -20,4 +22,24 @@ body {
 
 .header {
     border-bottom: none;
+}
+
+.activeTab {
+    background-color: $navbarActive;
+}
+
+.navbar {
+    background-color: $navBg;
+}
+
+.navbar-default {
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: $standardText;
+}
+
+.navbar-default .navbar-brand {
+    color: $standardText;
 }
