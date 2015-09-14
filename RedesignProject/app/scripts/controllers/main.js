@@ -15,20 +15,17 @@ angular.module('redesignProjectApp')
       'Karma'
     ];
 
-    $scope.myInterval = 5000;
+    $scope.myInterval = 3500;
     $scope.noWrapSlides = false;
     var slides = $scope.slides = [
         {
-          image: 'http://lorempixel.com/400/200/'
+          image: '../images/vientoslide1.jpg'
         },
         {
-          image: 'http://lorempixel.com/400/200/food'
+          image: '../images/vientoslide2.jpg'
         },
         {
-          image: 'http://lorempixel.com/400/200/sports'
-        },
-        {
-          image: 'http://lorempixel.com/400/200/people'
+          image: '../images/vientoslide3.jpg'
         }
     ];
   });
