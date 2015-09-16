@@ -5,13 +5,12 @@
     <img src="images/VientoTrans.png" alt="Viento Y Agua"><br>
   </p>
 
-  <div style="height: 305px">
+  <div class = "center mainCarousel">
   <carousel interval="myInterval" no-wrap="noWrapSlides">
     <slide ng-repeat="slide in slides" active="slide.active">
       <img ng-src="{{slide.image}}" style="margin:auto;">
       <div class="carousel-caption">
-        <h4>Slide {{$index}}</h4>
-        <p>{{slide.text}}</p>
+        <!-- <p>{{slide.text}}</p> -->
       </div>
     </slide>
   </carousel>

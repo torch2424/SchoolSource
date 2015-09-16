@@ -1,21 +1,32 @@
-//Colors, Defining my color scheme here
-$bgColor: #313131;
-$navBg: #524a4a;
-$standardText: #dee6ee;
-$navbarActive: #838383;
+//Colors, Defining my color scheme here (SASS)
+//Pallete: http://pokepalettes.com/#dusknoir
+$bgColor: #413939;
+$navBg: #625252;
+$standardText: #cdc5ac;
+$standardTextHover: #9c7b29;
+$navbarActive: #837373;
 
-
-
+//Adding our body colors and removing padding
 body {
   padding: 0;
   background-color: $bgColor;
   color: $standardText;
 }
 
-.jumbotron {
-    color: $bgColor;
+//A simple class to center things
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+//COnfiguring our jumbotron div
+.jumbotron {
+    color: $bgColor;
+    background-color: $standardText;
+}
+
+//Removing the borders that appear to be horizontal lines
 .footer {
     border-top: none;
 }
@@ -24,18 +35,22 @@ body {
     border-bottom: none;
 }
 
+//COnfiguring our nav bar that indicates which page we are on
 .activeTab {
     background-color: $navbarActive;
 }
 
+//Our navbar background color
 .navbar {
     background-color: $navBg;
 }
 
+//Remove the awkward border
 .navbar-default {
     border: none;
 }
 
+//Set the color of the navbar text
 .navbar-default .navbar-nav > li > a {
     color: $standardText;
 }
@@ -44,13 +59,60 @@ body {
     color: $standardText;
 }
 
+//Hovering over nav links should change to a different color
+.navbar-default:hover .navbar-nav:hover > li:hover > a:hover {
+    color: $standardTextHover;
+}
+
+.navbar-default:hover .navbar-brand:hover {
+    color: $standardTextHover;
+}
+
+//Setting the css for our google maps iframe
 .mapsFrame {
     width: 600px;
     height: 450px;
     border: 0;
 }
 
+//Configuring our carasouel on the home page
+.mainCarousel {
+        height: 305px;
+        width: 550px;
+}
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     height: 300px;
+}
+
+//Overriding bootstrap container
+.container {
+    max-width: none;
+}
+
+/* Responsive: Portrait tablets and down */
+//Making our image more responsize so they do not break the page
+@media screen and (max-width: 768px) {
+
+    .mapsFrame {
+        width: 90%;
+        height: auto;
+    }
+
+    .contactImage {
+        width: 90%;
+        height: auto;
+    }
+
+    .mainCarousel {
+        width: 90%;
+        height: 200px;
+    }
+
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        width: 100%;
+        height: 200px;
+    }
+
 }
