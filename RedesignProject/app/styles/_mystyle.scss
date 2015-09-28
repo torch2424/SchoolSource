@@ -7,7 +7,7 @@ $standardTextHover: #9c7b29;
 $navbarActive: #837373;
 
 //COlumns for live events
-$columnWidth: 150px;
+$columnWidth: 350px;
 
 //Adding our body colors and removing padding
 body {
@@ -100,6 +100,13 @@ body {
         border-radius: 3px;
 }
 
+.openMicImage {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 3px;
+}
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     height: 300px;
@@ -114,11 +121,29 @@ p {
 
 //Live events styling for the column layout
 .liveinfo {
-    width: 95%;
+    width: 98%;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.5em;
     font-size: 22px;
+
+    //Columns stuff
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+    -webkit-column-width: $columnWidth;
+    -moz-column-width: $columnWidth;
+    column-width: $columnWidth;
+    column-gap: 15px;
+
+    .nobreak {
+        break-inside: avoid-column;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
 }
 
 //Overriding bootstrap container
@@ -129,19 +154,6 @@ p {
 /* Responsive: Portrait tablets and down */
 //Making our image more responsize so they do not break the page
 @media screen and (max-width: 768px) {
-
-    //columns for live info
-    .liveinfo {
-        //Columns stuff
-        -webkit-column-count: 3; /* Chrome, Safari, Opera */
-        -moz-column-count: 3; /* Firefox */
-        column-count: 3;
-
-        -webkit-column-width: $columnWidth;
-        -moz-column-width: $columnWidth;
-        column-width: $columnWidth;
-        column-gap: 15px;
-    }
 
     .mapsFrame {
         width: 90%;
