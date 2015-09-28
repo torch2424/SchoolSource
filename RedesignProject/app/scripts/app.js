@@ -40,6 +40,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/liveevents', {
+        templateUrl: 'views/liveevents.html',
+        controller: 'LiveeventsCtrl',
+        controllerAs: 'liveevents'
+      })
       .otherwise({
         redirectTo: '/'
       });
