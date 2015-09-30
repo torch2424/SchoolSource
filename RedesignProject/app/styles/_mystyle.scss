@@ -6,7 +6,7 @@ $standardText: #cdc5ac;
 $standardTextHover: #9c7b29;
 $navbarActive: #837373;
 
-//COlumns for live events
+//Columns for live events
 $columnWidth: 350px;
 
 //Adding our body colors and removing padding
@@ -34,6 +34,7 @@ body {
     border-top: none;
 }
 
+//Rmoving defualt bootstrap borders around headers
 .header {
     border-bottom: none;
 }
@@ -42,6 +43,7 @@ body {
 .activeTab {
     background-color: $navbarActive;
 
+    //nesting link nav colors
     a {
         color: $standardText !important;
     }
@@ -56,6 +58,7 @@ body {
 .navbar-default {
     border: none;
 
+    //Removing the awkward border here as well
     .navbar-toggle {
         border: none;
     }
@@ -66,6 +69,7 @@ body {
     color: $standardText;
 }
 
+//Setting some more colors of the navbar
 .navbar-default .navbar-brand {
     color: $standardText;
 }
@@ -75,6 +79,7 @@ body {
     color: $standardTextHover;
 }
 
+//Hovering over nav links should change to a different color
 .navbar-default:hover .navbar-brand:hover {
     color: $standardTextHover;
 }
@@ -100,6 +105,7 @@ body {
         border-radius: 3px;
 }
 
+//Resizing the image of the open mic on the live events page
 .openMicImage {
     width: 80%;
     max-width: 350px;
@@ -107,6 +113,7 @@ body {
     border-radius: 3px;
 }
 
+//Changing the size of the images inside of our carousel
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
     height: 375px;
@@ -119,6 +126,7 @@ p {
     }
 }
 
+//Fixing the broken phone number link sizing
 .phoneNum {
     a {
         font-size: 22px;
@@ -138,15 +146,18 @@ p {
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
 
+    //Setting the width of our columns
     -webkit-column-width: $columnWidth;
     -moz-column-width: $columnWidth;
     column-width: $columnWidth;
     column-gap: 15px;
 
+    //Making sure the columns dont break in weird spots
     .nobreak {
         break-inside: avoid-column;
     }
 
+    //INcreasing the font wieght of the titles of the columns, so they are more apparent
     h2 {
         font-weight: bold;
     }
@@ -161,11 +172,13 @@ p {
 //Making our image more responsize so they do not break the page
 @media screen and (max-width: 768px) {
 
+    //Make the google maps iframe responsive
     .mapsFrame {
         width: 90%;
         height: auto;
     }
 
+    //Make the image headrs of our page resize for mobile
     .contactImage {
         width: 90%;
         height: auto;
@@ -173,19 +186,16 @@ p {
         border-radius: 3px;
     }
 
-    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-        width: 100%;
-        height: 300px;
-    }
-
+    //Changing the sizing of the carousel for mobile
     .mainCarousel {
         width: 90%;
-        height: 300px;
+        height: 250px;
     }
 
+    //Make sure carosel images are smaller
     .carousel-inner > .item > img, .carousel-inner > .item > a > img {
         width: 100%;
-        height: 200px;
+        height: 250px;
     }
 
 }
