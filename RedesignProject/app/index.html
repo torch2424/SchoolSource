@@ -35,14 +35,8 @@
             <a class="navbar-brand" href="#/">Viento Y Agua</a>
           </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="ActivenavCtrl">
-
-            <ul class="nav navbar-nav">
-              <li ng-class="{activeTab:isActive('/')}"><a href="#/">Home</a></li>
-              <li ng-class="{activeTab:isActive('/about')}"><a ng-href="#/about">About</a></li>
-              <li ng-class="{activeTab:isActive('/liveevents')}"><a ng-href="#/liveevents">Live Events</a></li>
-              <li ng-class="{activeTab:isActive('/contact')}"><a ng-href="#/contact">Contact</a></li>
-            </ul>
+          <div class="collapse navbar-collapse" id="js-navbar-collapse"
+          ng-include="'views/nav.html'">
           </div>
         </div>
       </div>
@@ -52,10 +46,8 @@
     <div ng-view=""></div>
     </div>
 
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-copyright-mark"></span> 2015 by Viento y Agua. This website is currently under contstruction for educational purposes.</p>
-      </div>
+    <div class="footer"
+    ng-include="'views/footer.html'">
     </div>
 
 
